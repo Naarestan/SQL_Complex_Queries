@@ -8,7 +8,7 @@ SELECT *
 FROM employees
 WHERE salary > (
 	SELECT AVG(salary)
-    FROM employees
+    	FROM employees
 )
 AND
 office_id = 3;
