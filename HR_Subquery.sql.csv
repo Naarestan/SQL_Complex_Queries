@@ -1,0 +1,4 @@
+employee_id,first_name,last_name,job_title,salary,reports_to,office_id
+72540,Guthrey,Iacopetti,"Office Assistant I",117690,37270,3
+72913,Kass,Hefferan,"Computer Systems Analyst IV",96401,37270,3
+76196,Mirilla,Janowski,"Cost Accountant",119241,37270,3
