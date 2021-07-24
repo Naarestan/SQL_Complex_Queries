@@ -1,2 +1,5 @@
+-- Find the products that have never been ordered
+
+
 product_id,name,quantity_in_stock,unit_price
 7,"Sweet Pea Sprouts",98,3.29
