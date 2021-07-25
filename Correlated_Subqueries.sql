@@ -12,5 +12,17 @@ WHERE salary > (
     	WHERE office_id = e.office_id
 );
 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+-- Get invoices that are larger than the client's average invoice amount
+
+USE sql_invoicing;
+
+SELECT *
+from invoices AS i
+WHERE invoice_total > (
+	SELECT AVG(invoice_total)
+    FROM invoices
+    WHERE client_id = i.client_id
+);
 
