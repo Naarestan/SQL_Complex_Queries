@@ -1,6 +1,8 @@
 -- Find customers who have ordered Lettuce (id = 3)
 -- Select Customer ID, First Name, and Last Name
 
+--- Solution # 1
+
 USE sql_store;
 
 SELECT
@@ -18,4 +20,31 @@ WHERE
 			(SELECT order_id
 			FROM order_items
 			WHERE product_id = 3)
-		)
+	)
+
+
+
+--- Solution # 2
+
+SELECT *
+FROM customers
+WHERE customer_id IN (
+	SELECT o.customer_id
+	FROM order_items AS oi
+	JOIN orders AS o USING (order_id)
+	WHERE product_id =3
+)
+
+
+--- Solution # 3
+
+
+
+
+
+
+
+
+
+
+
