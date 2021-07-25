@@ -1,4 +1,4 @@
--- Selec invoices that are larger than all invoices of client 3
+-- Select invoices that are larger than all invoices of client 3
 
 -- Solution # 1
 
