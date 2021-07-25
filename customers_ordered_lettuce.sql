@@ -49,15 +49,7 @@ JOIN orders AS o USING (customer_id)
 JOIN order_items AS oi USING (order_id)
 WHERE oi.product_id = 3;
 
----
 
-
-
-
-
-
-
-
-
-
-
+-------
+-- I think the thrid solution would be more intuative and easier to read and understand for whoever would read your code later.
+-------
