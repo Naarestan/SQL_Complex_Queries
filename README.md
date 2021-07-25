@@ -5,6 +5,7 @@
 ### Topics:
                         - Subqueries
                         - IN Operator
+                        - ALL Keyword
                         - Correlated Subqueries
                         - EXISTS Operator
 
