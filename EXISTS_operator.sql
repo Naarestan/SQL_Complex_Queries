@@ -25,8 +25,4 @@ WHERE EXISTS (
 
 
 
-
-
-
-
-
+-- EXISTS Operator is the more efficient way because the more data we have, the longer time SQL needs to read through WHERE IN clause for each data in the list. When we
