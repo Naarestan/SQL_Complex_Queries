@@ -41,7 +41,7 @@ SELECT *
 FROM products AS p
 WHERE product_id NOT IN (
 	SELECT product_id
-    FROM order_items
+    	FROM order_items
 );
 
 
@@ -50,6 +50,6 @@ SELECT *
 FROM products AS p
 WHERE NOT EXISTS (
 	SELECT product_id
-    FROM order_items
-    WHERE product_id = p.product_id
+    	FROM order_items
+    	WHERE product_id = p.product_id
 );
