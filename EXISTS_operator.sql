@@ -25,4 +25,6 @@ WHERE EXISTS (
 
 
 
--- EXISTS Operator is the more efficient way because the more data we have, the longer time SQL needs to read through WHERE IN clause for each data in the list. When we
+-- EXISTS Operator is the more efficient way because the more data we have, the longer time SQL needs to read through WHERE IN clause for each data in the list.
+-- When we use EXISTS Operator, the subquery does not return a result to the outer query. 
+-- Instead, it will return an indication of whether any rows in the subquery matches this search condition: WHERE client_id = c.client_id
